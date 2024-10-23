@@ -35,3 +35,16 @@ prevButton.onclick = () => {
 
 }
 
+
+// Menu functionality
+const btnMenu = document.querySelector('#btn-open-menu');
+btnMenu?.addEventListener('click', () => {
+    const menuMobile = document.querySelector('.menu-mobile');
+
+    if (menuMobile) { // Verifica se o elemento existe
+        // Alterna entre abrir e fechar o menu
+        menuMobile.classList.toggle('menu-mobile-open');
+    } else {
+        console.error('Elemento menu-mobile não encontrado!');
+    }
+});

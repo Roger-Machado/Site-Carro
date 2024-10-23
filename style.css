@@ -26,7 +26,7 @@ body {
 header {
     position: fixed;
     width: 90vw;
-    left: 50%;
+    left: 46%;
     transform: translateX(-50%);
     display: grid;
     align-items: center;
@@ -52,6 +52,7 @@ section {
     background-image: radial-gradient(#25cedb, #1e08e3);
     height: 100vh;
     position: relative;
+    overflow: hidden;
 
     & .list {
         width: 70vw;
@@ -299,3 +300,43 @@ section {
         }
     }
 }
+
+.nav-container-mobile {
+    display: none;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.menu-mobile-open {
+    display: block;
+}
+
+@media (max-width: 1200px) {
+       
+    .nav-container{
+      display:none;   
+    }
+
+    .nav-container-mobile {
+        display: block;
+    }
+
+    .content {
+        width: 100%; /* Define a largura do conteúdo */
+        text-align: center; /* Opcional: centraliza o texto do conteúdo */
+    }
+
+    .cursor {
+        display: none;
+    }
+    .dropdown {
+        display: block;
+    }
+
+
+
+}
+
+
